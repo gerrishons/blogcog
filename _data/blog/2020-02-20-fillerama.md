@@ -2,49 +2,378 @@
 template: BlogPost
 path: /fillerama
 date: 2020-02-20T14:59:36.571Z
-title: Dummy Content from Fillerama
+title: Quo
 thumbnail: /assets/image-5.jpg
 ---
-# No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.
+[![Downloads](https://pepy.tech/badge/quo)](https://pepy.tech/project/quo)
+[![PyPI version](https://badge.fury.io/py/quo.svg)](https://badge.fury.io/py/quo)
+[![Wheel](https://img.shields.io/pypi/wheel/quo.svg)](https://pypi.com/project/quo)
+[![Windows Build Status](https://img.shields.io/appveyor/build/gerrishons/quo/master?logo=appveyor&cacheSeconds=600)](https://ci.appveyor.com/project/gerrishons/quo)
+[![pyimp](https://img.shields.io/pypi/implementation/quo.svg)](https://pypi.com/project/quo)
+[![RTD](https://readthedocs.org/projects/quo/badge/)](https://quo.readthedocs.io)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5848515.svg)](https://doi.org/10.5281/zenodo.5848515)
+[![licence](https://img.shields.io/pypi/l/quo.svg)](https://opensource.org/licenses/MIT)
+[![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s.svg?style=social)](https://twitter.com/gerrishon_s)
 
-I am the Doctor, and you are the Daleks! You hit me with a cricket bat. You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better? You hit me with a cricket bat.
 
-You've swallowed a planet! No… It's a thing; it's like a plan, but with more greatness. You hate me; you want to kill me! Well, go on! **Kill me!** *KILL ME!* Sorry, checking all the water in this area; there's an escaped fish.
+[![Logo](https://raw.githubusercontent.com/scalabli/quo/master/pics/quo.png)](https://github.com/scalabli/quo)
 
-## Did I mention we have comfy chairs?
 
-No… It's a thing; it's like a plan, but with more greatness. Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you?
+`Forever Scalable`
 
-1. \*Insistently\* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do!
-2. Sorry, checking all the water in this area; there's an escaped fish.
-3. Father Christmas. Santa Claus. Or as I've always known him: Jeff.
+**Quo** is a toolkit for writing Command-Line Interface(CLI) applications and a TUI (Text User Interface) framework for Python.
 
-### I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship.
+Quo is making headway towards composing speedy and orderly CLI and TUI applications while forestalling any disappointments brought about by the failure to execute a python application.
+Simple to code, easy to learn, and does not come with needless baggage. 
 
-It's a fez. I wear a fez now. Fezes are cool. You know how I sometimes have really brilliant ideas? You know how I sometimes have really brilliant ideas? Sorry, checking all the water in this area; there's an escaped fish.
+## Compatibility
+Quo works flawlessly  with Linux, OSX, and Windows.
+Quo requires Python `3.8` or later. 
 
-* I am the last of my species, and I know how that weighs on the heart so don't lie to me!
-* You hit me with a cricket bat.
-* You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?
 
-I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why. I'm nobody's taxi service; I'm not gonna be there to catch you every time you feel like jumping out of a spaceship.
+## Features
+- [x] Support for Ansi, RGB and Hex color models
+- [x] Support for tabular presentation of data
+- [x] Intuitive progressbars
+- [x] Code completions
+- [x] Nesting of commands
+- [x] Customizable Text User Interface _(TUI)_ dialogs.
+- [x] Automatic help page generation
+- [x] Syntax highlighting
+- [x] Autosuggestions
+- [x] Key Binders
 
-It's a fez. I wear a fez now. Fezes are cool. The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant.
+## Getting Started
+### Installation
+You can install quo via the Python Package Index (PyPI)
 
-You know how I sometimes have really brilliant ideas? Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you?
+```
+pip install -U quo
 
-You've swallowed a planet! They're not aliens, they're Earth…liens! You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?
+```
 
-Father Christmas. Santa Claus. Or as I've always known him: Jeff. \*Insistently\* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do! No… It's a thing; it's like a plan, but with more greatness.
+In order to check your installation you can use
+```
+python -m pip show quo
+```
+Run the following to test Quo output on your terminal:
+```
+python -m quo
 
-\*Insistently\* Bow ties are cool! Come on Amy, I'm a normal bloke, tell me what normal blokes do! You've swallowed a planet! I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why.
+```
+![test](https://github.com/scalabli/quo/raw/master/docs/images/test.png)
 
-It's art! A statement on modern society, 'Oh Ain't Modern Society Awful?'! All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? Saving the world with meals on wheels.
+## Quo echo
+To output formatted text to your terminal you can import the [echo](https://quo.readthedocs.io/en/latest/introduction.html#quick-start) method.
+Try this:
 
-You've swallowed a planet! Heh-haa! Super squeaky bum time! All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?
+**Example 1**
+```python
+ from quo import echo
 
-No… It's a thing; it's like a plan, but with more greatness. It's a fez. I wear a fez now. Fezes are cool. You hate me; you want to kill me! Well, go on! Kill me! KILL ME! Saving the world with meals on wheels.
+ echo("Hello, World!", fg="red", italic=True, bold=True)
+```
+![Hello World](https://github.com/scalabli/quo/raw/master/pics/print.png)
 
-You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better? Sorry, checking all the water in this area; there's an escaped fish. You hit me with a cricket bat.
+**Example 2**
+```python
+ from quo import echo
 
-Did I mention we have comfy chairs? Stop talking, brain thinking. Hush. No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister. You know how I sometimes have really brilliant ideas?
+ echo("Quo is ", nl=False)
+ echo("scalable", bg="red", fg="black") 
+```
+![Scalable](https://github.com/scalabli/quo/raw/master/pics/scalable.png)
+
+Alternatively, you can import [print](https://quo.readthedocs.io/en/latest/printing_text.html#print)
+```python
+ from quo import print
+
+ print('<b>This is bold</b>')
+ print('<i>This is italic</i>')
+ print('<u>This is underlined</u>')
+                    
+ # Colors from the ANSI palette.
+ print('<red>This is red</red>')
+ print('<style fg="green" bg="red">Green on red background</stlye>')
+
+```
+## Quo prompt
+ - Using ``quo.prompt`` method.
+```python
+ from quo import prompt
+
+ prompt("What is your name?")
+```
+![quo.prompt](https://github.com/scalabli/quo/raw/master/pics/prompt.png)
+
+- Using ``quo.prompt.Prompt`` object
+
+```python
+ from quo.prompt import Prompt
+   
+ session = Prompt()
+ session.prompt("Type something:") 
+```
+Read more on [Prompt](https://quo.readthedocs.io/latest/prompt.html)
+
+# Quo Library
+Quo contains a number of builtin features you can use to create elegant output in your CLI.
+
+Click the following headings for details:»
+<details>
+<summary>Console</summary>
+For more control over quo terminal content, import and construct a `Console` object.
+
+```python
+   
+  from quo.console import Console
+
+  console = Console()
+
+```
+
+## ``Launching Applications``
+
+Quo supports launching applications through `Console.launch`. This can be used to open the default application associated with a URL or filetype.
+```python
+
+ from quo.console import Console
+   
+ console = Console()
+ console.launch("https://quo.rtfd.io/")
+                                                    
+```
+Read more on [Console](https://quo.readthedocs.io/en/latest/console.html)
+
+</details>
+
+<details>
+<summary>Completion</summary>
+
+## ``Autocompletion``
+
+Press [Tab] to autocomplete
+```python
+
+ from quo.prompt import Prompt
+ from quo.completion import WordCompleter
+ example = WordCompleter(['USA', 'UK', 'Canada', 'Kenya'])
+ session = Prompt(completer=example)
+ session.prompt('Which country are you from?: ')
+```
+![Autocompletion](https://github.com/scalabli/quo/raw/master/docs/images/autocompletion.png)
+
+## ``Autosuggestion``
+Auto suggestion is a way to propose some input completions to the user. Usually, the input is compared to the history and when there is another entry starting with the given text, the completion will be shown as gray text behind the current input. Pressing the right arrow → or ctrl-e will insert this suggestion, alt-f willinsert the first word of the suggestion.
+```python
+
+ from quo.history import MemoryHistory
+ from quo.prompt import Prompt
+
+ MemoryHistory.append("import os")
+ MemoryHistory.append('print("hello")') 
+ MemoryHistory.append('print("world")')  
+ MemoryHistory.append("import path")
+
+ session = Prompt(history=MemoryHistory, suggest="history")
+
+ while True:
+    session.prompt('> ')
+```
+Read more on [Completions](https://quo.readthedocs.io/en/latest/prompt.html#completion)
+</details>
+
+<details>
+<summary>Documenting Scripts</summary>
+Quo automatically generates help pages for your command-line tools.
+
+```python
+ from quo import print
+ from quo.console import command
+ from quo.console import app
+
+ @command()
+ @app('--count', default=1, help='number of greetings')
+ @app('--name', prompt="What is your name?", help="The person to greet")
+
+def hello(count: int, name: str):
+    """This script prints hello NAME COUNT times."""
+       for x in range(count):
+           print(f"Hello {name}!")
+
+ if __name__ == "__main__:
+          hello()
+```
+And what it looks like:
+![Help Text](https://raw.githubusercontent.com/secretum-inc/quo/master/docs/images/help-text.png)
+
+</details>
+<details>
+<summary>Progress</summary>
+Creating a new progress bar can be done by calling the class **ProgressBar**
+The progress can be displayed for any iterable. This works by wrapping the iterable (like ``range``) with the class **ProgressBar**
+
+```python
+
+ import time
+ from quo.progress import ProgressBar
+  
+ with ProgressBar() as pb:
+               for i in pb(range(800)):
+                             time.sleep(.01)
+```
+![Progress](https://raw.githubusercontent.com/scalabli/quo/master/docs/images/simple-progress-bar.png)
+
+Read more on [Progress](https://quo.readthedocs.io/en/latest/progress.html)
+
+</details>
+
+<details>
+<summary>Key Binding</summary>
+A key binding is an association between a physical key on a keyboard and a parameter.
+
+```python
+  
+ from quo import echo
+ from quo.keys import bind
+ from quo.prompt import Prompt
+ 
+ session = Prompt()
+
+ # Print "Hello world" when ctrl-h is pressed
+ @bind.add("ctrl-h")
+ def _(event):
+     echo("Hello, World!")
+
+ session.prompt(">> ")
+```
+Read more on [Key bindings](https://quo.readthedocs.io/en/latest/kb.html)
+
+</details>
+
+<details>
+<summary>Dialog</summary>
+High level API for displaying dialog boxes to the user for informational purposes, or get input fromthe user.
+
+1) Example of a message box dialog.
+```python
+
+ from quo.dialog import MessageBox
+
+ MessageBox(
+         title="Message pop up window",
+         text="Do you want to continue?\nPress ENTER to quit.")                                    
+```
+The above produces the following output
+![Message Box](https://github.com/scalabli/quo/raw/master/docs/images/messagebox.png)
+
+2) Example of a prompt box dialog
+```python
+ from quo.dialog import InputBox
+
+ InputBox(
+           title="InputBox shenanigans",
+           text="What Country are you from?:")
+
+```
+![Prompt Box](https://github.com/scalabli/quo/raw/master/docs/images/promptbox.png)
+
+Read more on [Dialogs](https://quo.readthedocs.io/en/latest/dialogs.html)
+
+</details>
+
+<details>
+<summary>Table</summary>
+
+Function [Table](https://quo.readthedocs.io/en/latest/table.html) offers a number of configuration options to set the look and feel of the table, including how borders are rendered and the style and alignment of the columns.
+
+Example
+```python
+ from quo.table import Table
+
+ data = [
+   ["Name", "Gender", "Age"],
+   ["Alice", "F", 24],
+   ["Bob", "M", 19],
+   ["Dave", "M", 24]
+ ]
+ Table(data)
+```
+![tabulate](https://raw.githubusercontent.com/scalabli/quo/master/docs/images/table.png)
+</details>
+
+<details>
+<summary>Widgets</summary>
+A collection of reusable components for building full screen applications.
+
+## ``Label``
+Widget that displays the given text. It is not editable or focusable.
+```python
+
+ from quo import container
+ from quo.widget import Label
+
+ content = Label("Hello, World", style="fg:black bg:red")
+  
+ # Press Ctrl-C to exit
+ 
+ container(content, bind=True, full_screen=True)
+
+```
+Read more on [Widgets](https://quo.readthedocs.io/en/latest/widgets.html)
+
+</details>
+
+For more intricate  examples, have a look in the [examples](https://github.com/scalabli/quo/tree/master/examples) directory and the documentation.
+
+## Donate🎁
+
+In order to for us to maintain this project and grow our community of contributors.
+[Donate](https://ko-fi.com/scalabli)
+
+
+
+## Quo is...
+
+**Simple**
+     If you know Python you can  easily use quo and it can integrate with just about anything.
+
+
+
+
+## Getting Help
+
+### Community
+
+For discussions about the usage, development, and the future of quo, please join our Google community
+
+* [Community👨‍👩‍👦‍👦](https://groups.google.com/g/scalabli)
+
+## Resources
+
+### Bug tracker
+
+If you have any suggestions, bug reports, or annoyances please report them
+to our issue tracker at 
+[Bug tracker](https://github.com/scalabli/quo/issues/) or send an email to:
+
+ 📥 scalabli@googlegroups.com
+
+
+
+
+## Blogs💻
+
+→ How to build CLIs using [quo](https://www.python-engineer.com/posts/cli-with-quo/)
+
+## License📑
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+This software is licensed under the `MIT License`. See the [License](https://github.com/scalabli/quo/blob/master/LICENSE) file in the top distribution directory for the full license text.
+
+
+## Code of Conduct
+Code of Conduct is adapted from the Contributor Covenant,
+version 1.2.0 available at
+[Code of Conduct](http://contributor-covenant.org/version/1/2/0/)
+
