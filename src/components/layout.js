@@ -25,7 +25,7 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Scalabli &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://w3layouts.com">Gerrishon Sirere</a></p>
+        <p>&copy; {new Date().getFullYear()} Scalabli &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://twitter.com/gerrishon_s">Gerrishon Sirere</a></p>
       </footer>
     </div>
   )
