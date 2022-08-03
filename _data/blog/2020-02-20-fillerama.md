@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /fillerama
+path: /quo
 date: 2020-02-20T14:59:36.571Z
 title: Quo
 thumbnail: /assets/image-5.jpg
