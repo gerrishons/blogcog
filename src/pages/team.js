@@ -19,6 +19,7 @@ const TeamPage = ({
           <h1 className="post-title">Gerrishon Sirere</h1>
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
+	  <h3>Gerrishon Sirere</h3>
       </div>
     </Layout>
   )
