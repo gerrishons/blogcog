@@ -19,10 +19,7 @@ const TeamPage = ({
           <h1 className="post-title">Gerrishon Sirere</h1>
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
-	  <style>
-	  h3 {text-align: center;}
-	  </style>
-	  <h3>Gerrishon Sirere</h3>
+	  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gerrishon Sirere</h3>
       </div>
     </Layout>
   )
