@@ -15,7 +15,7 @@ const TeamPage = ({
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -team">
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
+        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/gerrishon.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">Gerrishon Sirere</h1>
           <p>Let me help you kick start your next project &rarr;</p>
         </div>
