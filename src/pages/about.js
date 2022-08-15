@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 
-const TeamPage = ({
+const AboutPage = ({
   data: {
     site
   },
@@ -17,9 +17,9 @@ const TeamPage = ({
       <div className="two-grids -team">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/scalabli.png')`, marginBottom: 0}}>
           <h1 className="post-title"> </h1>
-          <p>Let me help you kick start your next project &rarr;</p>
+          //<p>Let me help you kick start your next project &rarr;</p>
         </div>
-	  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gerrishon Sirere</h3>
+	 // <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gerrishon Sirere</h3>
       </div>
     </Layout>
   )
