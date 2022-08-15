@@ -24,9 +24,9 @@ const TeamPage = ({
     </Layout>
   )
 }
-export default TeamPage
+export default AboutPage
 export const pageQuery = graphql`
-  query TeamPageQuery{
+  query AboutPageQuery{
     site {
       siteMetadata {
         title
