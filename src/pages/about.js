@@ -15,7 +15,7 @@ const AboutPage = ({
         <meta name="description" content={"Contact page of " + site.siteMetadata.description} />
       </Helmet>
       <div className="two-grids -team">
-        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/scalabli.png')`, marginBottom: 0}}>
+        <div className="post-thumbnail" style={{backgroundImage: `url('/assets/scalabli.png')`, marginBottom: 12}}>
           <h1 className="post-title"> </h1>
           //<p>Let me help you kick start your next project &rarr;</p>
         </div>
