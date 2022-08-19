@@ -1,8 +1,8 @@
 ---
 template: BlogPost
-path: /hello-world
+path: /sashay
 date: 2020-02-20T07:08:53.137Z
-title: Sashay
+title: Sashay: Atomatic installer for useful Linux based tools.
 thumbnail: /assets/sashay.png
 metaDescription: Meta description for Hello World
 ---
